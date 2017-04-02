@@ -1,8 +1,10 @@
 (defproject clojure-getting-started "1.0.0-SNAPSHOT"
-  :description "Demo Clojure web app"
-  :url "http://clojure-getting-started.herokuapp.com"
-  :license {:name "Eclipse Public License v1.0"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :description "Untangled Cookbook Recipe"
+  :url ""
+  :license {:name "MIT"
+            :url  "https://opensource.org/licenses/MIT"}
+  :min-lein-version "2.6.1"
+
   :dependencies [
                  [compojure "1.4.0"]
                  [ring/ring-jetty-adapter "1.4.0"]
@@ -35,7 +37,6 @@
 
 
                  ]
-  :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
   :uberjar-name "clojure-getting-started-standalone.jar"
@@ -44,31 +45,7 @@
 
 
 (comment (defproject untangled/websockets "1.0.0"
-  :description "Untangled Cookbook Recipe"
-  :url ""
-  :license {:name "MIT"
-            :url  "https://opensource.org/licenses/MIT"}
-  :min-lein-version "2.6.1"
 
-  :dependencies [
-
-
-                 [com.stuartsierra/component "0.3.2"]
-                 [com.google.guava/guava "21.0"]
-                 [com.datomic/datomic-free "0.9.5206" :exclusions [joda-time com.google.guava/guava]]
-                 [com.taoensso/timbre "4.3.1"]
-                 [commons-codec "1.10"]
-                 [org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.8.51" :exclusions [com.google.guava/guava]]
-                 [org.omcljs/om "1.0.0-alpha41"]
-                 [binaryage/devtools "0.5.2"]
-                 [com.cemerick/piggieback "0.2.1"]
-                 [org.clojure/tools.nrepl "0.2.12"]
-                 [juxt/dirwatch "0.2.3"]
-                 [navis/untangled-client "0.6.0" :exclusions [cljsjs/react org.omcljs/om]]
-                 [navis/untangled-server "0.5.1" :exclusions [com.stuartsierra/component]]
-                 [navis/untangled-spec "0.3.6"]
-                 [navis/untangled-websockets "0.2.0" :exclusions [com.google.guava/guava]]]
 
   :plugins [[lein-cljsbuild "1.1.3"]]
 
