@@ -1,39 +1,12 @@
+# Websockets and Server Push
 
-# clojure-getting-started
+This is an attempt to apply a minimal set of changes to the untangled-websockets recipe in order to make the recipe run on heroku.
 
-A barebones Clojure app, which can easily be deployed to Heroku.  
+Simple chat app showing how to integrate [untangled-websocekts](https://github.com/untangled-web/untangled-websockets)
 
-This application support the [Getting Started with Clojure](https://devcenter.heroku.com/articles/getting-started-with-clojure) article - check it out.
+You can check out the readme for the usage of `untangled-websockets` or check out the source code here.
 
-## Running Locally
+### Running
 
-Make sure you have Clojure installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone https://github.com/heroku/clojure-getting-started.git
-$ cd clojure-getting-started
-$ lein repl
-user=> (require 'clojure-getting-started.web)
-user=>(def server (clojure-getting-started.web/-main))
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Clojure on Heroku, see these Dev Center articles:
-
-- [Clojure on Heroku](https://devcenter.heroku.com/categories/clojure)
+This is a full-stack example. Run both the server and the client as explained in the top-level cookbook README.
 
