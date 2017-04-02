@@ -37,7 +37,10 @@
 
 
                  ]
-  :plugins [[environ/environ.lein "0.3.1"]]
+  :plugins [
+            [environ/environ.lein "0.3.1"]
+            [lein-cljsbuild "1.1.3"]
+  ]
   :hooks [environ.leiningen.hooks]
   :uberjar-name "clojure-getting-started-standalone.jar"
   :profiles {:production {:env {:production true}}})
@@ -47,7 +50,6 @@
 (comment (defproject untangled/websockets "1.0.0"
 
 
-  :plugins [[lein-cljsbuild "1.1.3"]]
 
   :source-paths ["src/server"]
 
