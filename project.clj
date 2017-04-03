@@ -48,19 +48,6 @@
   :jvm-opts ["-server" "-Xmx1024m" "-Xms512m" "-XX:-OmitStackTraceInFastThrow"]
   :clean-targets ^{:protect false} ["resources/public/js" "target"]
 
-
-
-
-  )
-
-
-
-(comment (defproject untangled/websockets "1.0.0"
-
-
-
-
-
   :cljsbuild {:builds
               [{:id           "dev"
                 :source-paths ["src/client" "dev/client"]
@@ -77,6 +64,19 @@
 
   :repl-options {:init-ns          user
                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+
+
+
+  )
+
+
+
+(comment (defproject untangled/websockets "1.0.0"
+
+
+
+
+
 
   :uberjar-name "uberjar.jar"
   
