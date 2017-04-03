@@ -43,7 +43,13 @@
   ]
   :hooks [environ.leiningen.hooks]
   :uberjar-name "clojure-getting-started-standalone.jar"
-  :profiles {:production {:env {:production true}}})
+  :profiles {:production {:env {:production true}}}
+  :source-paths ["src/server"]
+
+
+
+
+  )
 
 
 
@@ -51,7 +57,6 @@
 
 
 
-  :source-paths ["src/server"]
 
   :jvm-opts ["-server" "-Xmx1024m" "-Xms512m" "-XX:-OmitStackTraceInFastThrow"]
 
