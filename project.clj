@@ -45,6 +45,8 @@
   :uberjar-name "clojure-getting-started-standalone.jar"
   :profiles {:production {:env {:production true}}}
   :source-paths ["src/server"]
+  :jvm-opts ["-server" "-Xmx1024m" "-Xms512m" "-XX:-OmitStackTraceInFastThrow"]
+  :clean-targets ^{:protect false} ["resources/public/js" "target"]
 
 
 
@@ -58,9 +60,6 @@
 
 
 
-  :jvm-opts ["-server" "-Xmx1024m" "-Xms512m" "-XX:-OmitStackTraceInFastThrow"]
-
-  :clean-targets ^{:protect false} ["resources/public/js" "target"]
 
   :cljsbuild {:builds
               [{:id           "dev"
